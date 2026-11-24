@@ -1,31 +1,146 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Pegawai & Pelayanan Disdukcapil Kab. Barru</title>
-  <style>
-    /* Mengatur agar halaman tampil penuh memenuhi layar tanpa scroll */
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: #f1f5f9;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amran | amranperdana.my.id</title>
+<meta name="description" content="Riwayat Hidup Amran Perdana - Disdukcapil Barru, Sulawesi Selatan">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#0f3d8a;--blue2:#1a5fc1;--light:#eef4ff;--text:#172033;--muted:#6b7a90;--line:#e6ebf2;--green:#0ca678}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#eef1f5;color:var(--text);padding-bottom:90px}
+.topbar{position:sticky;top:0;z-index:20;background:var(--blue);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.topbar b{font-size:15px}
+.topbar span{font-size:12px;opacity:.85}
+.hero{background:linear-gradient(160deg,#0f3d8a,#1a5fc1);color:#fff;padding:22px 18px 28px;border-radius:0 0 28px 28px}
+.hero-row{display:flex;gap:14px;align-items:center}
+.avatar{width:78px;height:78px;border-radius:50%;background:#fff;color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;flex-shrink:0;border:3px solid rgba(255,255,255,.6);overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.hero h1{font-size:23px;line-height:1.15}
+.hero p{font-size:13px;opacity:.92;margin-top:4px}
+.badge{display:inline-block;margin-top:10px;background:#fff;color:var(--blue);font-size:11px;font-weight:700;padding:6px 10px;border-radius:999px}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px 14px 0}
+.quick a,.quick div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;text-decoration:none;color:var(--text)}
+.quick small{color:var(--muted);font-size:11px}
+.quick b{display:block;font-size:13px;margin-top:3px;word-break:break-word}
+.wrap{padding:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px}
+.card h2{font-size:15px;display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.card h2 i{width:28px;height:28px;border-radius:8px;background:var(--light);display:flex;align-items:center;justify-content:center;font-style:normal}
+.card p,.card li{font-size:13.5px;line-height:1.6;color:#2d3a4d}
+ul{padding-left:18px}
+.biodata{display:grid;grid-template-columns:105px 1fr;gap:8px 10px;font-size:13.5px}
+.biodata dt{color:var(--muted)}
+.biodata dd{font-weight:600}
+.timeline{border-left:2px solid #d9e2f0;margin-left:7px;padding-left:16px}
+.t-item{position:relative;padding-bottom:16px}
+.t-item:last-child{padding-bottom:0}
+.t-item:before{content:"";position:absolute;left:-22px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--blue2);border:2px solid #fff;box-shadow:0 0 0 2px #d9e2f0}
+.t-item small{color:var(--blue2);font-weight:700;font-size:12px}
+.t-item b{display:block;font-size:14px;margin:2px 0}
+.t-item span{font-size:13px;color:var(--muted)}
+.skill{display:flex;flex-wrap:wrap;gap:8px}
+.skill span{background:var(--light);color:var(--blue);padding:7px 11px;border-radius:999px;font-size:12.5px;font-weight:600}
+.kontak{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px}
+.btn{flex:1;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-wa{background:#0ca678;color:#fff}
+.note{background:#fff7e6;border:1px dashed #e5b85c;color:#6b4d00;padding:12px;border-radius:12px;font-size:12.5px;line-height:1.5;margin-bottom:12px}
+@media(min-width:700px){body{max-width:520px;margin:0 auto;background:#dfe6ef}.hero{border-radius:0 0 28px 28px}}
+</style>
 </head>
 <body>
+<div class="topbar"><b>AMRAN A.Md.Kom</b><span>CV • Online</span></div>
 
-  <!-- Ganti URL di bawah ini dengan URL Web App Apps Script Anda yang berakhiran /exec -->
-  <iframe src="https://script.google.com/macros/s/AKfycbwtT1L0H9LFhjeFKm5wxQ7h_YP6eA_MHjQuRg5q8YgWtCtqlmsg3AU_3WqCMjabcbc9/exec" title="Disdukcapil Barru"></iframe>
+<header class="hero">
+  <div class="hero-row">
+    <div class="avatar"><!-- Ganti dengan foto kamu: <img src="foto.jpg"> -->AP</div>
+    <div>
+      <h1>Amran A.Md.Kom</h1>
+      <p>Jl. Iskandar Unru, Kel. Coppo, Kec. Barru, Kab. Barru, Sulawesi Selatan, Indonesia Kode POS 90711<br>amranperdana.my.id</p>
+      <span class="badge">✦ RIWAYAT HIDUP</span>
+    </div>
+  </div>
+</header>
 
+<div class="quick">
+  <div><small>📞 Telepon / WA</small><b>+62 85143607134</b></div>
+  <div><small>✉️ Email</small><b>amranperdana48@gmail.com</b></div>
+  <a href="https://amranperdana.my.id"><small>🌐 Website</small><b>amranperdana.my.id</b></a>
+  <div><small>📍 Alamat</small><b>Jalan Iskandar Unru, Kab. Barru, Sulsel</b></div>
+</div>
+
+<div class="wrap">
+<div class="note">⚠️ <b>File ini masih template.</b> Kirimkan foto / ketikan CV kamu, nanti saya isikan Nama Lengkap, TTL, Pendidikan, Pengalaman, dan Organisasi persis sesuai dokumen aslimu.</div>
+
+<section class="card">
+  <h2><i>👤</i> Data Pribadi</h2>
+  <dl class="biodata">
+    <dt>Nama Lengkap</dt><dd>Amran A.Md.Kom</dd>
+    <dt>Tempat / Tgl Lahir</dt><dd>Ujung Pandang, 14 Januari 1990</dd>
+    <dt>Jenis Kelamin</dt><dd>Laki-laki</dd>
+    <dt>Agama</dt><dd>ISLAM</dd>
+    <dt>Status</dt><dd>Menikah</dd>
+    <dt>Kewarganegaraan</dt><dd>Indonesia</dd>
+    <dt>Alamat</dt><dd>Jalan Iskandar Unru, Kab. Barru, Sulawesi Selatan</dd>
+    <dt>Hobi</dt><dd>Dengar Musik, Gaming, Coding</dd>
+  </dl>
+</section>
+
+<section class="card">
+  <h2><i>🎯</i> Tentang Saya</h2>
+  <p>[Tulis 2-3 kalimat tentang dirimu. Contoh: Saya adalah freelance berpengalaman di bidang IT memiliki ketertarikan pada pelayanan masyarakat dan teknologi.</p>
+</section>
+
+<section class="card">
+  <h2><i>🎓</i> Riwayat Pendidikan</h2>
+  <div class="timeline">
+    <div class="t-item"><small>2010 - 2014</small><b>STMIK DIPANEGARA</b><span>Manajemen Informatika • Makassar</span><p>Lulusan Terbaik</p></div>
+    <div class="t-item"><small>2005 - 2008</small><b>SMA NEGERI 2</b><span>IPA • Pinrang</span></div>
+    <div class="t-item"><small>2002 - 2005</small><b>SMP NEGERI 17</b><span>Makassar</span></div>
+    <div class="t-item"><small>1996 - 2002</small><b>SD NEGERI UNGGULAN MONGISIDI I</b><span>Makassar</span></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2><i>💼</i> Pengalaman Kerja</h2>
+  <div class="timeline">
+    <div class="t-item"><small>2018 - Sekarang</small><b>Pengelola Layanan Operasional</b><span>Dinas Kependudukan dan Pencatatan Sipil • Kabupaten Barru</span><p>[Tugas utama: Operator Rekam Biometrik]</p></div>
+    <div class="t-item"><small>2012 - 20XX</small><b>Operator Pendamping Kecamatan</b><span>PT. SUCOFIDO • Makassar</span><p>[Tugas utama: Operator Perekaman Biometrik pada Kecamatan Pujananting]</p></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2><i>👥</i> Pengalaman Organisasi</h2>
+  <ul>
+    <li><b>DIPANEGARA COMPUTER CLUB (DCC)</b> — [Staf Layanan Informasi] (2013 - 2014)</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2><i>📜</i> Pelatihan & Sertifikat</h2>
+  <ul>
+    <li>[Nama Pelatihan] — [Penyelenggara] (Tahun)</li>
+    <li>[Nama Sertifikat] — [Penyelenggara] (Tahun)</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2><i>⭐</i> Keahlian</h2>
+  <div class="skill"><span>Pelayanan Masyarakat</span><span>Microsoft Office</span><span>Teknologi / Website</span><span>Komunikasi</span><span>Administrasi</span></div>
+</section>
+
+<section class="card">
+  <h2><i>📂</i> Dokumen</h2>
+  <p>• KTP &nbsp; • Ijazah Terakhir &nbsp; • Pas Foto<br><small style="color:var(--muted)">Lampirkan link Google Drive jika perlu.</small></p>
+</section>
+
+<p style="text-align:center;font-size:12px;color:var(--muted);padding:10px">© 2026 Amran Perdana • Dibuat untuk amranperdana.my.id/bnba2026</p>
+</div>
+
+<div class="kontak">
+  <a class="btn btn-primary" href="tel:[085143607134]">📞 Telepon</a>
+  <a class="btn btn-wa" href="https://wa.me/[+6285043607134]">💬 WhatsApp</a>
+</div>
 </body>
 </html>
